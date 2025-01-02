@@ -66,6 +66,7 @@ body {
 }
 
 .container-maps iframe {
+  width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.23);
   border-radius: 10px;
 }
@@ -203,17 +204,43 @@ body {
   color: #9290c3;
 }
 
+/* Media query for mobile devices (max width: 768px) */
 @media (max-width: 768px) {
-  .result {
-    padding: 15px;
+  .navbar h1 {
+    font-size: 1.5em;
   }
 
-  .result h2 {
-    font-size: 1.6rem;
+  .hero {
+    height: 400px;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .form-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-container select {
+    font-size: 14px;
+  }
+
+  .form-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .result h1 {
+    font-size: 1.4rem;
   }
 
   .result p {
     font-size: 1rem;
+  }
+
+  .footer {
+    padding: 15px 0;
   }
 
   .footer p {
@@ -222,5 +249,46 @@ body {
 
   .footer-links a {
     font-size: 0.9rem;
+  }
+
+  .footer-links {
+    margin-top: 5px;
+  }
+}
+
+/* Media query for very small devices (max width: 480px) */
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 1.8rem;
+  }
+
+  .form-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .form-container select {
+    font-size: 12px;
+  }
+
+  .form-container button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .result h1 {
+    font-size: 1.2rem;
+  }
+
+  .result p {
+    font-size: 0.9rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+
+  .footer-links a {
+    font-size: 0.8rem;
+    margin: 0 5px;
   }
 }
